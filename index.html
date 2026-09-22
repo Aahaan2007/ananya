@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>happy birthdayyyyyy</title>
+<meta name="description" content="A special birthday page for Ananya — with love, aahaan 🤍">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========================================================
+       INTRO SPLASH OVERLAY
+  ======================================================== -->
+  <div class="intro-overlay" id="introOverlay" aria-hidden="true">
+    <canvas class="intro-canvas" id="introCanvas"></canvas>
+    <div class="intro-content">
+      <div class="intro-emoji" id="introEmoji">🎂</div>
+      <h1 class="intro-heading" id="introHeading">
+        <span class="intro-line intro-line--1">happy</span>
+        <span class="intro-line intro-line--2">birthday</span>
+        <span class="intro-line intro-line--3">ananya <3</span>
+      </h1>
+      <p class="intro-sub" id="introSub">September 23rd 🎉 (i never forget it qt)</p>
+      <button class="intro-btn" id="introBtn">click if you love me 🤍</button>
+    </div>
+  </div>
+
+  <!-- Drifting confetti / balloons layer, sits behind everything -->
+  <div class="sky" id="sky" aria-hidden="true"></div>
+
+  <!-- ========================================================
+       HERO  —  compact, not full-screen
+  ======================================================== -->
+  <header class="hero" id="hero">
+    <div class="hero-balloons" aria-hidden="true">
+      <span class="balloon balloon--1"></span>
+      <span class="balloon balloon--2"></span>
+      <span class="balloon balloon--3"></span>
+      <span class="balloon balloon--4"></span>
+      <span class="balloon balloon--5"></span>
+    </div>
+
+    <p class="hero-eyebrow reveal">it's my bestie's day —</p>
+    <h2 class="hero-name reveal delay-1">happy birthdayy<br><span>my bestiee</span></h2>
+    <p class="hero-date reveal delay-2">September 23rd</p>
+  </header>
+
+  <!-- ========================================================
+       BIRTHDAY MESSAGE
+  ======================================================== -->
+  <section class="message-section">
+    <p class="section-kicker reveal">a lil something</p>
+    <p class="message-text reveal delay-1" id="messageText">
+      i know you're all the over THERE and you're really far away, but i'll always make sure that your birthday remains special cause it is my BESTFRIEND's birthday (not female, but best friend all genders included). you're one of the best human beings i know and i cannot deal w anything without you cause i certainly need you to drop all my lores and seek out faaltu ki advice.
+      thank you for being the way you are, and thank you for being in my life (now and forever cause hell nah you aint leaving).<br>
+      i love you the most, will meet you soon 🤍
+    </p>
+    <p class="message-sign reveal delay-2">— with love, aahaan🫶</p>
+  </section>
+
+  <!-- ========================================================
+       PHOTO GALLERY
+  ======================================================== -->
+  <section class="gallery-section">
+    <p class="section-kicker reveal">little moments</p>
+    <h2 class="gallery-title reveal delay-1">A few of our favourites</h2>
+    <div class="gallery-grid" id="galleryGrid"></div>
+    <p class="gallery-empty" id="galleryEmpty">photos will appear here once you add them to the /photos folder ✨</p>
+  </section>
+
+  <!-- ========================================================
+       CANDLE MOMENT  —  after the gallery
+  ======================================================== -->
+  <section class="candle-section">
+    <p class="section-kicker reveal">make a wish</p>
+    <div class="cake reveal delay-1" id="cake">
+      <div class="candle">
+        <div class="flame" id="flame"></div>
+      </div>
+      <div class="cake-top"></div>
+      <div class="cake-icing"></div>
+      <div class="cake-body">
+        <span class="sprinkle sprinkle--1"></span>
+        <span class="sprinkle sprinkle--2"></span>
+        <span class="sprinkle sprinkle--3"></span>
+        <span class="sprinkle sprinkle--4"></span>
+        <span class="sprinkle sprinkle--5"></span>
+      </div>
+    </div>
+    <button class="blow-btn reveal delay-2" id="blowBtn">tap to blow out the candle</button>
+    <p class="wish-text" id="wishText">ik your wish was to have me in you life forever hehehehehe ❤️❤️❤️❤️❤️❤️</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p class="footer-text">love you to the moon and back 🫶🏻</p>
+    <div class="footer-hearts" aria-hidden="true">
+      <span>♡</span><span>♡</span><span>♡</span>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo preview">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close preview">&#x2715;</button>
+    <button class="lightbox-arrow lightbox-prev" id="lightboxPrev" aria-label="Previous photo">&#x2039;</button>
+    <div class="lightbox-img-wrap">
+      <img class="lightbox-img" id="lightboxImg" src="" alt="">
+    </div>
+    <button class="lightbox-arrow lightbox-next" id="lightboxNext" aria-label="Next photo">&#x203A;</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
